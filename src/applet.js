@@ -19,7 +19,7 @@ function run() {
     function createWindow() {
         window = $.NSWindow.alloc.initWithContentRectStyleMaskBackingDefer(
             $.NSMakeRect(0, 0, 300, 200),
-            $.NSTitledWindowMask | $.NSClosableWindowMask | $.NSMiniaturizableWindowMask,
+            $.NSTitledWindowMask,
             $.NSBackingStoreBuffered,
             false
         );
