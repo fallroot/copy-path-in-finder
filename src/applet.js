@@ -138,8 +138,9 @@ function makePath(type) {
         try {
             path = Finder.windows.at(0).target().url();
         } catch(e) {
-            Finder.displayDialog('Select valid folder(s) or file(s)', {
-                withTitle: 'Invalid Path'
+            Finder.displayAlert('Invalid Path', {
+                as: 'critical',
+                message: 'Select valid folder(s) or file(s)'
             });
 
             Application.currentApplication().quit();
